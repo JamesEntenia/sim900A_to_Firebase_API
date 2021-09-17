@@ -1,0 +1,27 @@
+{
+  "name": "sim900a_to_firebase_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "James Entenia",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase": "^8.6.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesEntenia/sim900A_to_Firebase_API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JamesEntenia/sim900A_to_Firebase_API/issues"
+  },
+  "homepage": "https://github.com/JamesEntenia/sim900A_to_Firebase_API#readme",
+  "description": ""
+}
