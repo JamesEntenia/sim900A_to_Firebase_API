@@ -26,7 +26,8 @@ var firebase_ref = firebaseDB.ref('Barangay');
 
 //----------------------------------HTTP GET------------------------------------
 router.get('/http_get',(req,res)=>{
-    res.send(req.query)
+    res.send(typeof req.query)
+    firebase_ref.child('test').set(req.query);
 })
 //------------------------------------------------------------------------------
 
