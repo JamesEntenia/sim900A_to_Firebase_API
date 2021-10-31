@@ -14,27 +14,27 @@ const initial = fb.initializeApp({
     storageBucket: "we-are-perpared.appspot.com",
     messagingSenderId: "751226503797",
     appId: "1:751226503797:web:db9487957407fad5f02e3c"
-    });
+});
 
 var firebaseDB = fb.database();
 
-var firebase_ref = firebaseDB.ref('Barangay');
+var firebase_ref = firebaseDB.ref('/');
 //------------------------------------------------------------------------------
 
 
 
 
 //----------------------------------HTTP GET------------------------------------
-router.get('/http_get',(req,res)=>{
+router.get('/http_get', (req, res) => {
     res.send(req.query)
-    firebase_ref.child('test').set(req.query);
+    firebase_ref.child('FloodMonitoringDevice').set(req.query);
 })
 //------------------------------------------------------------------------------
 
 
 
 //---------------------------------HTTP POST------------------------------------
-router.post('/insert',(req,res)=>{
+router.post('/insert', (req, res) => {
     console.log(req.body)
 
 })
